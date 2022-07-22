@@ -1,9 +1,31 @@
 <?php require __DIR__ . "/../config/config.php"; ?>
 <?php require __DIR__ . "/__template/header.php"; ?>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs container my-5" id="navId" role="tablist">
+    <li class="nav-item">
+        <a href="#tab1" class="nav-link active" data-bs-toggle="tab">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="#tab2" class="nav-link" data-bs-toggle="tab">About</a>
+    </li>
+</ul>
 
-<div class="youtube">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SRCWY7jMu5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Booyah!!!</h2>
+<!-- Tab panes -->
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+        <div class="container mt-5">
+            <h1>Hello Wolrd!!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia temporibus facere incidunt blanditiis perspiciatis inventore mollitia, culpa deleniti voluptates eligendi saepe laudantium nihil fuga est repellendus quam, ad consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia temporibus facere incidunt blanditiis perspiciatis inventore mollitia, culpa deleniti voluptates eligendi saepe laudantium nihil fuga est repellendus quam, ad consequuntur.</p>
+            <a href="youtube">🎵 Youtube</a>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="tab2" role="tabpanel">
+        <div class="container mt-5">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia temporibus facere incidunt blanditiis perspiciatis inventore mollitia, culpa deleniti voluptates eligendi saepe laudantium nihil fuga est repellendus quam, ad consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia temporibus facere incidunt blanditiis perspiciatis inventore mollitia, culpa deleniti voluptates eligendi saepe laudantium nihil fuga est repellendus quam, ad consequuntur.</p>
+        </div>
+    </div>
 </div>
-
 <?php require __DIR__ . "/__template/footer.php"; ?>
