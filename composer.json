@@ -1,0 +1,15 @@
+{
+    "name": "ridharemix/mini-php-starter",
+    "description": "PHP Starter Boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Muhammad Ridha",
+            "email": "ridharemix@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# add a trailing slash if public/$1 is a directory
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
+RewriteRule ^(.*[^/])$ %{REQUEST_URI}/ [L,R=301,NE]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(?!public/)(.*)$ public/$1.php [L,NC]
